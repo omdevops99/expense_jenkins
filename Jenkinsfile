@@ -1,8 +1,6 @@
 pipeline {
-    agent {
-        node { label 'workstation'}
-    }
-
+    agent
+    
     stages {
         stage('compile') {
             steps {
