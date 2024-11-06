@@ -1,4 +1,4 @@
-@Library ('Goal_job-library') _
+@Library('Goal_job-library') _
 
 ci()
 
