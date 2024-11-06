@@ -1,31 +1,7 @@
-pipeline {
-    agent any
-    stages {
-        stage('compile') {
-            steps {
-                echo 'compile'
-            }
-        }
+@Library ('Goal_job-library') _
+
+ci()
 
 
-        stage('test cases') {
-            steps {
-                echo 'testcases'
-            }
-        }  
+    
 
-
-        stage('build') {
-            steps {
-                echo 'build'
-            }
-        }
-
-
-        stage('release') {
-            steps {
-                echo 'release'
-            }
-        }          
-    }
-}
